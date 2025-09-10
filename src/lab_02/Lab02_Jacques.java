@@ -20,7 +20,7 @@ import javafx.scene.layout.StackPane;
  * 2025/10/09
  * https://github.com/waffleprinter/Lab_02.git
  */
-public class Lab_02 extends Application {
+public class Lab02_Jacques extends Application {
     public static void main(String[] args) {
         launch(args);
     }
