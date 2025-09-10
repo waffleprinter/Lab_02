@@ -4,9 +4,12 @@
  */
 package lab_02;
 
+import java.util.Random;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
@@ -35,6 +38,10 @@ public class Lab_02 extends Application {
         Label labelImage = new Label();
         StackPane middle = new StackPane(labelImage);
         root.setCenter(middle);
+        
+        int randomImageNumber = new Random().nextInt(20) + 101;
+        Image image = new Image("file:images/" + randomImageNumber + ".jpg");
+        labelImage.setGraphic(new ImageView(image));
         
         primaryStage.setScene(new Scene(root, 250, 300));
         primaryStage.show();
