@@ -4,17 +4,26 @@
  */
 package lab_02;
 
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
 /**
  *
- * @author 6298805
+ * @author Jacques-Conrad Calagui-Painchaud
  */
-public class Lab_02 {
-
-    /**
-     * @param args the command line arguments
-     */
+public class Lab_02 extends Application {
     public static void main(String[] args) {
-        // TODO code application logic here
+        launch(args);
+    }
+    
+    @Override
+    public void start(Stage primaryStage) {
+        BorderPane root = new BorderPane();
+        
+        primaryStage.setScene(new Scene(root, 250, 300));
+        primaryStage.show();
     }
     
 }
