@@ -17,6 +17,8 @@ import javafx.scene.layout.StackPane;
 /**
  *
  * @author Jacques-Conrad Calagui-Painchaud
+ * 2025/10/09
+ * https://github.com/waffleprinter/Lab_02.git
  */
 public class Lab_02 extends Application {
     public static void main(String[] args) {
@@ -39,7 +41,7 @@ public class Lab_02 extends Application {
         StackPane middle = new StackPane(labelImage);
         root.setCenter(middle);
         
-        int randomImageNumber = new Random().nextInt(20) + 101;
+        int randomImageNumber = new Random().nextInt(20) + 101; // random number from 101 to 120
         Image image = new Image("file:images/" + randomImageNumber + ".jpg");
         labelImage.setGraphic(new ImageView(image));
         
